@@ -1,0 +1,9 @@
+Testtest test test
+Dr. Test speaking
+
+Patient shows signs of testing positive for COVID-19.
+Patient is not vaccinated.
+
+Followup: 2 weeks
+
+CC: Test

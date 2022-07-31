@@ -19,11 +19,17 @@ public:
 		initDocs();
 	}
 	void printDocs();
-private:
-	bool initDocs();
 
-	std::vector<std::string> PHI{"mrn", "ssn", "md" "name", "Dr.", "Center", "Hospital", "Mrs.", "Ms.", 
-		"Mr." "history", "medical", "record", "number", "date", "date:", "signed", "physician", "intern", "room", "unit", "MD", "MD,", "DR"}; //list of potentially sensitive words to search for
-	std::vector<std::pair<bool, int>> documents; //whether or not a document is sensitive, and associated score
-	int groupClassifier; // centroid
+	const std::vector<std::string> PHI{ "mrn", "ssn", "md" "name", "Dr.", "Center", "Hospital", "Mrs.", "Ms.",
+		"Mr." "history", "medical", "record", "number", "MEDICAL", "NO.", "no.", "No.", "RECORD", "NUMBER", "date", "date:", "Date:", "physician", "intern", "room", "unit", "MD", "MD,", "DR" }; //list of potentially sensitive words to search for
+
+	int getSensitiveCentroid() { return sensitiveCentroid; }
+	int getNonsensitiveCentroid() { return nonsensitiveCentroid; }
+private:
+	void initDocs();
+
+	std::vector<std::pair<bool, int>> sensitiveDocs; //sensitive docs, and associated score
+	std::vector<std::pair<bool, int>> nonsensitiveDocs; //nonsensitive docs, and associated score
+	int sensitiveCentroid;
+	int nonsensitiveCentroid;
 };

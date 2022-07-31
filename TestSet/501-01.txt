@@ -1,0 +1,14 @@
+MEDICAL RECORD #2224422
+
+Date: 24/12/2067
+
+Patient complained of pain in the lower left leg. Admitted into CMC for treatment under Dr. Smith.
+Suggest she stay off the leg for the next two weeks.
+
+Medication: 
+Tylenol 2MG f/ pain
+Lexapro 5MG f/ anxiety
+
+Followup: 2 months
+
+CC: Todd Riley, MD
