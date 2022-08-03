@@ -76,6 +76,8 @@ bool uiSetValue(const std::string &name, const std::string &value)
 
 static void uiInitialize()
 {
+    svr.set_mount_point("/", "./ui");
+
     uiRegisterValue("ping");
     uiSetValue("ping", "pong");
 
