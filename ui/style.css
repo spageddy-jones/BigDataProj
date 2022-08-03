@@ -1,5 +1,26 @@
 body {
     font-family: sans-serif;
-    background-color: hsl(0, 0%, 4%);
+    background-color: hsl(0, 0%, 8%);
     color: white;
+}
+
+fieldset {
+    border: 2pt solid hsl(0, 0%, 50%);
+    border-radius: 0.5rem;
+}
+
+input, button {
+    font-size: 12pt;
+}
+
+#status {
+    position: absolute;
+    top: 0;
+    right: 0;
+    overflow: hidden;
+    font-weight: bold;
+    margin: 0;
+    padding: 1rem;
+    background-color: darkgoldenrod;
+    border-radius: 0 0 0 0.5rem;
 }

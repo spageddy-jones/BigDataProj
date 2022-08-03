@@ -2,4 +2,6 @@
 
 window.addEventListener("load", () => {
     setStatus("Initializing...");
+    registerButtons();
+    netStartPingLoop();
 });

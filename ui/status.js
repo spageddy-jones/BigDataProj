@@ -2,7 +2,7 @@
 
 let statusEl = null;
 
-function setStatus(msg) {
+function setStatus(msg, color) {
     statusEl = document.getElementById("status");
 
     if (statusEl === null) {
@@ -11,5 +11,9 @@ function setStatus(msg) {
         return;
     } else {
         statusEl.innerText = msg;
+
+        if (color !== undefined) {
+            statusEl.style.backgroundColor = color;
+        }
     }
 }

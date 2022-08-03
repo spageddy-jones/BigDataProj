@@ -6,6 +6,7 @@
 
     <script src="status.js"></script>
     <script src="net.js"></script>
+    <script src="controls.js"></script>
     <script src="main.js"></script>
 
     <title>BigDataProj GUI</title>
@@ -16,6 +17,14 @@
 <body>
     <h1>BigDataProj GUI</h1>
     <p id="status">...</p>
+    <fieldset>
+        <legend>Ping Test</legend>
+        <label for="ping-text">Ping text</label>
+        <input id="ping-text" value="pong">
+        <label for="ping-output">Response</label>
+        <input id="ping-output" disabled>
+        <button id="ping-button">Ping</button>
+    </fieldset>
 </body>
 
 </html>
